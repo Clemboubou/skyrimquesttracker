@@ -1,0 +1,9 @@
+com/skyrimtracker/model/Quest.class
+com/skyrimtracker/repository/CharacterRepository.class
+com/skyrimtracker/Main.class
+com/skyrimtracker/service/CharacterService.class
+com/skyrimtracker/service/QuestService.class
+com/skyrimtracker/repository/QuestRepository.class
+com/skyrimtracker/controller/CharacterController.class
+com/skyrimtracker/model/Character.class
+com/skyrimtracker/controller/QuestController.class
