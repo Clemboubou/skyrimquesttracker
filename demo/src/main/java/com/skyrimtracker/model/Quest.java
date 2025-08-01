@@ -1,5 +1,6 @@
 package com.skyrimtracker.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 /**
@@ -18,6 +19,7 @@ public class Quest {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "character_id")
+    @JsonBackReference
     private Character character;
 
     // Constructeur par défaut

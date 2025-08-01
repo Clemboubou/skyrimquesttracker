@@ -1,5 +1,6 @@
 package com.skyrimtracker.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ public class Character {
     private Integer level;
 
     @OneToMany(mappedBy = "character", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JsonManagedReference
     private List<Quest> quests = new ArrayList<>();
 
     // Constructeur par défaut
